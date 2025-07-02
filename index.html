@@ -1,42 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta de CEP</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <div class="a">
         <div class="aa">
             <div class="logo">
-                <img src="img/imgLogo.png" alt="Logo IFPR">
+                <img src="img/imgLogo.png" alt="Logo IFPR" />
             </div>
             <div class="titulo">
                 <p>Consulta de CEP</p>
             </div>
         </div>
+
         <div class="ab">
+            <p>Nome</p>
+            <input type="text" id="abNome" />
             <p>CEP</p>
-            <input type="text" name="" id="abCEP">
+            <input type="text" id="abCEP"/>
             <p>Logradouro</p>
-            <input type="text" name="" id="abLog">
+            <input type="text" id="abLog"/>
             <p>Complemento</p>
-            <input type="text" name="" id="abCom">
+            <input type="text" id="abCom" />
             <p>Bairro</p>
-            <input type="text" name="" id="abBai">
+            <input type="text" id="abBai"/>
             <p>Cidade</p>
-            <input type="text" name="" id="abCity">
+            <input type="text" id="abCity"/>
             <p>UF</p>
-            <input type="text" name="" id="abUF">
+            <input type="text" id="abUF"/>
             <p>DDD</p>
-            <input type="text" name="" id="abDDD">
+            <input type="text" id="abDDD"/>
+
+            <button type="button" id="abBuscar">Enviar</button>
+            <button type="button" id="abSalvar">Salvar</button>
         </div>
     </div>
+
     <div class="b">
-        
+        <h2>Usuários Salvos</h2>
+        <ul id="abLista"></ul>
     </div>
 
     <script src="js.js"></script>
 </body>
+
 </html>
